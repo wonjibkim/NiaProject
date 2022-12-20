@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<html-->
+<!--  lang="en"-->
+<!--  class="light-style"-->
+<!--  dir="ltr"-->
+<!--  data-theme="theme-default"-->
+<!--  data-assets-path="/assets/"-->
+<!--  data-template="vertical-menu-template-free"-->
+<!--&gt;-->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Blank layout - Layouts | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="/assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="/assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="/assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Content -->
+
+    <h4 class="fw-bold p-4">Blank Page!!!!!!!!!</h4>
+
+<!--    &lt;!&ndash; / Content &ndash;&gt;-->
+
+<!--    <div class="buy-now">-->
+<!--      <a-->
+<!--        href="https://themeselection.com/products/sneat-bootstrap-html-admin-template/"-->
+<!--        target="_blank"-->
+<!--        class="btn btn-danger btn-buy-now"-->
+<!--        >Upgrade to Pro</a-->
+<!--      >-->
+<!--    </div>-->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="/assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="/assets/vendor/libs/popper/popper.js"></script>
+    <script src="/assets/vendor/js/bootstrap.js"></script>
+    <script src="/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="/assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+
+    <!-- Main JS -->
+    <script src="/assets/js/main.js"></script>
+
+    <!-- Page JS -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+    <div id="map" style="width:100%;height:350px;"></div>
+
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5d3b6787dfab0b9aebf37f542b61c877&libraries=services"></script>
+
+
+    <script th:inline="javascript">
+      // var rList = [[${rList}]]
+      // console.log(rList);
+//       var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+//               mapOption = {
+//                 center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+//                 level: 3 // 지도의 확대 레벨
+//               };
+//
+//       var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+//
+//       //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+//
+//       // HTML5의 geolocation으로 사용할 수 있는지 확인합니다
+//       if (navigator.geolocation) {
+//
+//         // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+//         navigator.geolocation.getCurrentPosition(function(position) {
+//
+//           var lat = position.coords.latitude, // 위도
+//                   lon = position.coords.longitude; // 경도
+//
+//           var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+//                   message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+//
+//           // 마커와 인포윈도우를 표시합니다
+//           displayMarker(locPosition, message);
+//
+//         });
+//
+//       } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+//
+//         var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),
+//                 message = 'geolocation을 사용할수 없어요..'
+//
+//         displayMarker(locPosition, message);
+//       }
+//
+//       // 하윤이코드
+//     //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+//     //   var rList = [[${rList}]]
+//     //
+//     //   // 마커를 표시할 위치와 title 객체 배열입니다
+//     //   var positions = [
+//     //
+//     //     { content: '<div>name</div>',
+//     //       latlng: new kakao.maps.LatLng(lat, lon)},
+//     //
+//     //
+//     //   ];
+//     //
+//     //
+//     //
+//     //   for (var i=0; i<rList.length; i++) {
+//     //
+//     //     var name = [[${rList.t_name}]]
+//     //     var lat = [[${rList.t_lat}]]
+//     //     var lon = [[${rList.t_lon}]]
+//     //
+//     //     var json = {
+//     //       "name" : name,
+//     //       "lat" : lat,
+//     //       "lon" : lon
+//     //     }
+//     //     positions.push(json)
+//     //   }
+//
+// //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+//
+//
+//         var positions = [
+//
+//           { content: '<div>name</div>',
+//             latlng: new kakao.maps.LatLng(lat, lon)},
+//
+//
+//         ];
+//
+//
+//       var rList = [[${rList}]]
+//       console.log(rList);
+//       for (var i=0; i<rList.length; i++) {
+//
+//         var name =rList.get(map.get("t_name"))
+//
+//         var json = {
+//           "name" : name,
+//           "lat" : lat,
+//           "lon" : lon
+//         }
+//
+//
+//         positions.push(json)
+//       }
+//
+//
+//
+//
+//
+//
+//
+//       //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+//
+//
+//
+//
+//
+//
+//       for (var i = 0; i < positions.length; i ++) {
+//         // 마커를 생성합니다
+//         var marker = new kakao.maps.Marker({
+//           map: map, // 마커를 표시할 지도
+//           position: positions[i].latlng // 마커의 위치
+//         });
+//
+//         // 마커에 표시할 인포윈도우를 생성합니다
+//         var infowindow = new kakao.maps.InfoWindow({
+//           content: positions[i].content // 인포윈도우에 표시할 내용
+//         });
+//
+//         // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
+//         // 이벤트 리스너로는 클로저를 만들어 등록합니다
+//         // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+//         kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+//         kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+//       }
+//
+//       // 인포윈도우를 표시하는 클로저를 만드는 함수입니다
+//       function makeOverListener(map, marker, infowindow) {
+//         return function() {
+//           infowindow.open(map, marker);
+//         };
+//       }
+//
+//       // 인포윈도우를 닫는 클로저를 만드는 함수입니다
+//       function makeOutListener(infowindow) {
+//         return function() {
+//           infowindow.close();
+//         };
+//       }
+//
+//
+//       //ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+//       // 지도에 마커와 인포윈도우를 표시하는 함수입니다
+//       function displayMarker(locPosition, message) {
+//
+//         // 마커를 생성합니다
+//         var marker = new kakao.maps.Marker({
+//           map: map,
+//           position: locPosition
+//         });
+//
+//         var iwContent = message, // 인포윈도우에 표시할 내용
+//                 iwRemoveable = true;
+//
+//         // 인포윈도우를 생성합니다
+//         var infowindow = new kakao.maps.InfoWindow({
+//           content : iwContent,
+//           removable : iwRemoveable
+//         });
+//
+//         // 인포윈도우를 마커위에 표시합니다
+//         infowindow.open(map, marker);
+//
+//         // 지도 중심좌표를 접속위치로 변경합니다
+//         map.setCenter(locPosition);
+//       }
+
+    </script>
+
+
+
+
+
+
+  </body>
+</html>
