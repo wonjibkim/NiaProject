@@ -43,7 +43,7 @@ public class WjController {
         List<GoodsDTO> rList = wjService.GoodsPasing();
 
         log.info("가져온 rList 크기 " + rList.size());
-        
+
 
         model.addAttribute("rList",rList);
 
